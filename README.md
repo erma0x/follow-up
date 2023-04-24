@@ -1,4 +1,52 @@
 # followup-bot
+## Telegram bot for logging responses to Google Spreadsheets
+
+This Telegram bot was developed with Python 3 and allows user responses to be recorded on a Google Spreadsheets file.
+
+## Prerequisites
+
+Before using this bot, you need to create a Google account and sign in to the Google Cloud Console. Additionally, you need to create a project, enable the Google Drive API, and generate OAuth 2.0 skills for the project.
+
+Once the JSON credential file has been generated, you need to put the file name in the creds variable of the main.py file.
+
+Finally, you need to install the following Python libraries:
+```
+      python-telegram-bot
+      gspread
+      oauth2client
+```
+
+## Usage
+
+To use this Telegram bot, you need to run the main.py file. Once the bot has started, you can interact with it via Telegram chat.
+
+The bot will ask the user five questions: first name, last name, email, Instagram account and favorite color. User responses will be saved to a Google Spreadsheets file.
+
+## Limitations
+
+This bot was developed for demonstration purposes and has not been optimized for scalability and security. In particular, OAuth 2.0 credentials are stored in plain text in the code file, which is a potential security risk.
+
+## Credits
+
+This Telegram bot was developed by [developer name]. The code is distributed under the MIT license.
+
+# Process
+1. send video link 1
+2. write 'I agree' to leave information
+3. send the 5 questions
+4. questions and save to google docs
+5. send video links 2
+6. send whatsapp chat link
+
+# Tests
+`python3 followup_bot.py`
+
+# Running on a VPS like linode.com
+`nohup python3 followup_bot.py 1> bot.out & 2>bot.err`
+
+## ______________________________________
+
+# followup-bot
 ## Bot Telegram per la registrazione di risposte su Google Spreadsheets
 
 Questo bot Telegram è stato sviluppato con Python 3 e permette di registrare le risposte dell'utente su un file di Google Spreadsheets.
